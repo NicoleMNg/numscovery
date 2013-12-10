@@ -1,0 +1,164 @@
+
+<!--
+1. build the timer with the API - 
+
+2. click start game and trigger the router 
+
+3. if there is time, which there wont be, make the options thingy work
+
+-->
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Numscovery</title>
+
+  <link rel="stylesheet" href="stylesheets/normalize.css" />
+  <link rel="stylesheet" href="stylesheets/foundation.css" />
+   <link rel="stylesheet" href="stylesheets/screen.css" />
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,800,400,600' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Mystery+Quest' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Joti+One' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Codystar' rel='stylesheet' type='text/css'>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/libs/custom.modernizr.js"></script>
+
+
+</head>
+<body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="row nav">
+      <div class="large-4 columns logo">
+        <h1 class="centerlogo"><a href="index.html">num<span>scovery</span></a></h1>
+      </div>
+    </div>
+  
+    <div class="row container">
+        <div class="large-12 columns content">
+        	<h2>Ready to play numscovery?</h2>
+          <div class="small-3 small-centered columns options first-options">
+            <div class="button-bar">
+              <h4>Difficulty Level</h4>
+              <ul class="button-group radius font">
+                <li><a href="#" class="small button">Wimpy</a></li>
+                <li><a href="#" class="small button">Medium</a></li>
+                <li><a href="#" class="small button">Murderous</a></li>
+              </ul>
+            </div>
+          </div>
+          <h3>Choose your options</h3>
+          <div class="switch">
+
+            <input id="custom-options-1" name="custom-options" type="radio" checked>
+            <label class="off" for="x" onclick="">OFF</label>
+
+            <input id="custom-options-2" name="custom-options" type="radio">
+            <label class="on" for="x1" onclick="">ON</label>
+
+            <span></span> 
+          </div>
+			    <div class="row">
+			        <div class="small-3 small-centered columns options last-options">
+                <div class="limit">
+                  <h4>Numbers</h4>
+                  <label>How many numbers do you want to find?</label>
+                  <select name="time" id="time">
+                    <option value="20">None</option>
+                    <option value="50">1 minute</option>
+                    <option value="100">2 minute</option>
+                    <option value="150">5 minute</option>
+                    <option value="200">10 minute</option>
+                  </select>
+                </div>
+                <hr />
+                <div class="timer">
+                  <h4>Timer</h4>
+                  <select name="time" id="time">
+                    <option value="0">None</option>
+                    <option value="1">1 minute</option>
+                    <option value="2">2 minute</option>
+                    <option value="5">5 minute</option>
+                    <option value="10">10 minute</option>
+                    <option value="20">20 minute</option>
+                  </select>
+                </div>
+                <hr />
+                <div class="button-bar font">
+                  <h4>Font</h4>
+                  <ul class="button-group radius font">
+                    <li><a href="#" class="small button font1">1234567890</a></li>
+                    <li><a href="#" class="small button font2">1234567890</a></li>
+                    <li><a href="#" class="small button font3">1234567890</a></li>
+                  </ul>
+  			       </div>
+               <hr />
+               <div class="row">
+                <div class="large-8 large-centered columns">
+                    <a href="#game" class="large button expand start">Start the Game</a>
+                </div>
+                </div>
+  			    </div>
+          </div>
+      </div>
+  </div>
+  <!-- Footer -->
+  
+  <footer class="row">
+    <div class="large-12 columns">
+      <p>&copy; Copyright Vy and Nikki 2013. <span>Touch and be slaughtered.</span></p>
+    </div> 
+  </footer>
+
+            <div class="row center colors">
+              <div class="large-2 columns bright"></div>
+              <div class="large-2 columns white"></div>
+              <div class="large-2 columns blue"></div>
+              <div class="large-2 columns white"></div>
+              <div class="large-2 columns yellow"></div>
+
+
+              <div class="large-2 columns white"></div>
+              <div class="large-2 columns yellow"></div>
+              <div class="large-2 columns white"></div>
+              <div class="large-2 columns grey"></div>
+              <div class="large-2 columns white"></div>
+
+
+              
+          </div>
+
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  <script src="js/foundation/foundation.js"></script>
+  <script src="js/foundation/foundation.alerts.js"></script>
+  <script src="js/foundation/foundation.clearing.js"></script>
+  <script src="js/foundation/foundation.cookie.js"></script>
+  <script src="js/foundation/foundation.dropdown.js"></script>
+  <script src="js/foundation/foundation.forms.js"></script>
+  <script src="js/foundation/foundation.joyride.js"></script>
+  <script src="js/foundation/foundation.magellan.js"></script>
+  <script src="js/foundation/foundation.orbit.js"></script>
+  <script src="js/foundation/foundation.placeholder.js"></script>
+  <script src="js/foundation/foundation.reveal.js"></script>
+  <script src="js/foundation/foundation.section.js"></script>
+  <script src="js/foundation/foundation.tooltips.js"></script>
+  <script src="js/foundation/foundation.topbar.js"></script>
+  <script src="js/foundation/foundation.interchange.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

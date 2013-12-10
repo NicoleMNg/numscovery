@@ -1,0 +1,29 @@
+
+<div id="loader" ></div>
+
+<div class="row container gameholder">
+	<p class="lives">Lives: <span id="livesValue"></span></p>
+	<div id="timer"></div>
+	<div class="canvasHolder" onload="init();">
+		<canvas id="testCanvas" width="700" height="600"></canvas>
+		<div class="sideStuff">
+			
+			<p class="next">Next Up<br /><span id="gameTarget"></span></p>
+			<a href="#" data-reveal-id="myModal" style="visibility:hidden">Dialog Trigger</a>
+		</div>
+	</div>
+	<div id="loseBox" class="reveal-modal small" data-reveal>
+	  <h2>Game Over!!!</h2>
+	  <p>Sorry, you lost. Better luck next time!</p>
+	  <!--<a class="retry close-modal">Retry</a>-->
+	  <a href="#settings" class="close-modal" clashref="#settings">Back to Menu</a>
+	</div>
+	<div id="winBox" class="reveal-modal small" data-reveal>
+	  <h2>Congratulations!!!</h2>
+	  <p>You has conquered Numscovery in <span id="winTime"></span> seconds with <span id="livesLeft"></span> left.</p>
+	  <p> Maybe try a higher level?</p>
+	  <a href="#settings" class="close-modal" clashref="#settings">Back to Menu</a>
+	</div>
+</div>
+
+

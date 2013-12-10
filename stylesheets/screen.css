@@ -1,0 +1,731 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 16, ../sass/screen.scss */
+body {
+  background: url(../images/wild_oliva.png) repeat center center fixed;
+  height: 100%;
+  -webkit-user-select: none;
+  /* webkit (safari, chrome) browsers */
+  -moz-user-select: none;
+  /* mozilla browsers */
+  -khtml-user-select: none;
+  /* webkit (konqueror) browsers */
+  -ms-user-select: none;
+  /* IE10+ */
+}
+
+/* line 25, ../sass/screen.scss */
+.select {
+  width: 90%;
+}
+
+/* line 29, ../sass/screen.scss */
+.showView .options {
+  width: 50%;
+  height: 160px;
+}
+
+/* line 34, ../sass/screen.scss */
+.showView select {
+  padding: 10px;
+  margin: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+  -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+  box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+  background: #f8f8f8;
+  color: #888;
+  border: none;
+  outline: none;
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  width: 90%;
+  font-size: 22px;
+}
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 58, ../sass/screen.scss */
+  .showView select {
+    padding-right: 18px;
+  }
+}
+/* line 61, ../sass/screen.scss */
+.showView label {
+  position: relative;
+  color: #105469;
+  font-size: 22px;
+}
+
+/* line 67, ../sass/screen.scss */
+.showView label:after {
+  content: '<>';
+  font: 19px "Consolas", monospace;
+  color: #aaa;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 57px;
+  top: 52px;
+  padding: 0 0 2px;
+  border-bottom: 1px solid #ddd;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* line 81, ../sass/screen.scss */
+.showView label:before {
+  content: '';
+  right: 57px;
+  top: 53px;
+  width: 20px;
+  height: 20px;
+  background: #f8f8f8;
+  position: absolute;
+  pointer-events: none;
+  display: block;
+}
+
+/* line 91, ../sass/screen.scss */
+p {
+  font-family: 'Open Sans', serif;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+/* line 96, ../sass/screen.scss */
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #105469;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+/* line 106, ../sass/screen.scss */
+h4 {
+  font-family: 'Open Sans', serif;
+  font-size: 22px;
+  line-height: 32px;
+  color: #000a02;
+  font-weight: lighter;
+}
+
+/* line 114, ../sass/screen.scss */
+h1 {
+  margin: 20px 0;
+}
+/* line 117, ../sass/screen.scss */
+h1 a {
+  font-size: 46px;
+  color: #e5e31a;
+  letter-spacing: 1.2;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 42px;
+}
+/* line 123, ../sass/screen.scss */
+h1 a span {
+  color: #31b7de;
+}
+/* line 126, ../sass/screen.scss */
+h1 a:hover {
+  color: #31b7de;
+}
+/* line 128, ../sass/screen.scss */
+h1 a:hover span {
+  color: #e5e31a;
+}
+
+/* ---------- CONTAINER ---------- */
+/* line 139, ../sass/screen.scss */
+.container {
+  background: url(../images/debut_light.png) repeat center center fixed;
+  border-radius: 3px 3px 0px 3px;
+  margin-top: 1em;
+  padding: 10px;
+  width: 100%;
+  border: 3px solid white;
+  box-shadow: 1px 0px #999, 0px 1px #666, 2px 1px #999, 1px 2px #666, 3px 2px #999, 2px 3px #666, 4px 3px #999, 3px 4px #666, 5px 4px #999, 4px 5px #666, 6px 5px #999, 5px 6px #666, 7px 6px #999, 6px 7px #666, 8px 7px #999, 7px 8px #666, 9px 8px #999, 8px 9px #666, 10px 9px #999, 9px 10px #666, 11px 10px #999, 10px 11px #666, 12px 11px #999, 11px 12px #666, 12px 12px #999;
+}
+/* line 159, ../sass/screen.scss */
+.container .row {
+  clear: both;
+}
+
+/* line 164, ../sass/screen.scss */
+#contentMain {
+  min-height: 100%;
+  /* equal to footer height */
+}
+
+/* line 169, ../sass/screen.scss */
+#contentMain:after {
+  content: ".";
+  display: block;
+}
+
+/* line 174, ../sass/screen.scss */
+.content {
+  padding: 10px;
+}
+/* line 177, ../sass/screen.scss */
+.content h3 {
+  float: left;
+}
+/* line 180, ../sass/screen.scss */
+.content .switch {
+  float: right;
+  width: 20%;
+  position: relative;
+  margin-top: 10px;
+}
+/* line 186, ../sass/screen.scss */
+.content .switch label.off {
+  left: 15px !important;
+}
+/* line 190, ../sass/screen.scss */
+.content .switch label.on {
+  right: 15px !important;
+}
+
+/* line 196, ../sass/screen.scss */
+.options {
+  overflow: auto;
+  background: white;
+  padding: 20px;
+  width: 95%;
+  margin: 20px auto;
+}
+/* line 203, ../sass/screen.scss */
+.options .button {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  background: none;
+  border: none;
+  color: #105469;
+  margin: 0;
+}
+/* line 212, ../sass/screen.scss */
+.options .button:hover {
+  background: #0d4253;
+  color: white;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+/* line 220, ../sass/screen.scss */
+.options .timer h4 {
+  float: left;
+  margin-right: 30px;
+}
+/* line 224, ../sass/screen.scss */
+.options .timer select {
+  float: left;
+  width: 30%;
+  height: 40px;
+  border-color: #105469;
+  background: none;
+}
+/* line 233, ../sass/screen.scss */
+.options .font1 {
+  font-family: 'Mystery Quest', cursive;
+}
+/* line 234, ../sass/screen.scss */
+.options .font2 {
+  font-family: 'Joti One', cursive;
+}
+/* line 235, ../sass/screen.scss */
+.options .font3 {
+  font-family: 'Codystar', cursive;
+}
+/* line 237, ../sass/screen.scss */
+.options .start {
+  background: #31b7de;
+  color: white;
+  margin-bottom: 20px;
+}
+/* line 242, ../sass/screen.scss */
+.options .start:hover {
+  background: #e5e31a;
+  color: #000a02;
+  border-color: #898810;
+}
+
+/* line 250, ../sass/screen.scss */
+p.lives {
+  font-size: 63px;
+  font-weight: bold;
+  width: 300px;
+  float: left;
+  padding: inherit;
+  margin-top: 31px;
+  margin-bottom: 0;
+  font-family: 'Open Sans', arial, sans-serif;
+  color: #31b7de;
+}
+
+/* line 263, ../sass/screen.scss */
+p.discover {
+  width: 100px;
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* line 271, ../sass/screen.scss */
+.sideStuff {
+  background-color: #ebea51;
+  border: 3px solid #eae948;
+  border-radius: 3px;
+  padding: 5px;
+  position: relative;
+  right: 87px;
+  height: 300px;
+  color: #000a02;
+}
+
+/* line 283, ../sass/screen.scss */
+p.next {
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-family: 'Open Sans', arial, sans-serif;
+}
+/* line 290, ../sass/screen.scss */
+p.next span {
+  font-size: 100px;
+  position: relative;
+  top: 96px;
+}
+
+/* line 301, ../sass/screen.scss */
+#timer {
+  float: right;
+  width: 557px;
+}
+
+/* line 306, ../sass/screen.scss */
+.canvasHolder {
+  width: 1050px;
+}
+/* line 309, ../sass/screen.scss */
+.canvasHolder canvas {
+  border: 3px solid white;
+  background: white;
+  color: #105469;
+}
+
+/* line 317, ../sass/screen.scss */
+.sideStuff {
+  float: right;
+  width: 230px;
+}
+/* line 323, ../sass/screen.scss */
+.sideStuff .game-timer {
+  width: 180px;
+  height: 50px;
+  background: #cccccc;
+  margin: 5px;
+  margin-bottom: 100px;
+  padding: 10px;
+}
+/* line 331, ../sass/screen.scss */
+.sideStuff .game-timer p {
+  font-size: 30px;
+  text-align: center;
+}
+/* line 338, ../sass/screen.scss */
+.sideStuff .game-target {
+  width: 180px;
+  height: 160px;
+  background: #cccccc;
+  margin: 5px;
+  padding: 10px;
+}
+/* line 346, ../sass/screen.scss */
+.sideStuff .game-target p {
+  font-size: 150px;
+  line-height: 1;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 358, ../sass/screen.scss */
+.myoptions {
+  float: left;
+  margin-top: 14px;
+  color: #31b7de;
+}
+
+/* line 364, ../sass/screen.scss */
+.onoffswitch {
+  position: relative;
+  width: 90px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/* line 376, ../sass/screen.scss */
+.onoffswitch-checkbox {
+  display: none;
+}
+
+/* line 380, ../sass/screen.scss */
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/* line 387, ../sass/screen.scss */
+.onoffswitch-inner {
+  width: 200%;
+  margin-left: -100%;
+  -moz-transition: margin 0.3s ease-in 0s;
+  -webkit-transition: margin 0.3s ease-in 0s;
+  -o-transition: margin 0.3s ease-in 0s;
+  transition: margin 0.3s ease-in 0s;
+}
+
+/* line 396, ../sass/screen.scss */
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 14px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 411, ../sass/screen.scss */
+.onoffswitch-inner:before {
+  content: "YES";
+  padding-left: 10px;
+  background-color: #31b7de;
+  color: #FFFFFF;
+}
+
+/* line 418, ../sass/screen.scss */
+.onoffswitch-inner:after {
+  content: "NO";
+  padding-right: 10px;
+  background-color: #bfbfbf;
+  color: #fff;
+  text-align: right;
+}
+
+/* line 426, ../sass/screen.scss */
+.onoffswitch-switch {
+  width: 18px;
+  margin: 6px;
+  background: #FFFFFF;
+  height: 22px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 56px;
+  -moz-transition: all 0.3s ease-in 0s;
+  -webkit-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+}
+
+/* line 440, ../sass/screen.scss */
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+
+/* line 444, ../sass/screen.scss */
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
+
+/* line 448, ../sass/screen.scss */
+.topPlay {
+  position: relative;
+  margin-top: 10px;
+}
+
+/* ---------- FOOTER ---------- */
+/* line 456, ../sass/screen.scss */
+footer {
+  width: 50%;
+  padding-top: 20px;
+  -webkit-user-select: none;
+  /* webkit (safari, chrome) browsers */
+  -moz-user-select: none;
+  /* mozilla browsers */
+  -khtml-user-select: none;
+  /* webkit (konqueror) browsers */
+  -ms-user-select: none;
+  /* IE10+ */
+}
+/* line 466, ../sass/screen.scss */
+footer p {
+  color: #cccccc;
+  font-family: 'Open Sans', serif;
+  font-size: 14px;
+}
+/* line 470, ../sass/screen.scss */
+footer p span {
+  font-size: 80%;
+  color: #1d9bc2;
+}
+
+/* line 477, ../sass/screen.scss */
+.colors {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+/* line 480, ../sass/screen.scss */
+.colors .bright {
+  background: #31b7de;
+  height: 10px;
+  width: 20%;
+}
+/* line 481, ../sass/screen.scss */
+.colors .blue {
+  background: #105469;
+  height: 10px;
+  width: 20%;
+}
+/* line 482, ../sass/screen.scss */
+.colors .black {
+  background: #000a02;
+  height: 10px;
+  width: 20%;
+}
+/* line 483, ../sass/screen.scss */
+.colors .yellow {
+  background: #e5e31a;
+  height: 10px;
+  width: 20%;
+}
+/* line 484, ../sass/screen.scss */
+.colors .grey {
+  background: #cccccc;
+  height: 10px;
+  width: 20%;
+}
+/* line 485, ../sass/screen.scss */
+.colors .white {
+  background: white;
+  height: 10px;
+  width: 20%;
+}
+
+/* line 489, ../sass/screen.scss */
+.intro {
+  width: 100%;
+}
+
+/* line 493, ../sass/screen.scss */
+.intro h1 {
+  font-size: 20px;
+}
+
+/* line 497, ../sass/screen.scss */
+.intro .menu {
+  width: 400px;
+  margin: auto;
+  display: block;
+}
+/* line 502, ../sass/screen.scss */
+.intro .menu li {
+  display: inline;
+  list-style: none;
+  padding: 10px;
+}
+
+/* line 509, ../sass/screen.scss */
+.intro .introLink {
+  color: #ffffff;
+}
+
+/* line 514, ../sass/screen.scss */
+.intro .introLink:hover {
+  color: #728bb1;
+}
+
+/* line 518, ../sass/screen.scss */
+.navStuff {
+  color: #cccccc;
+  float: right;
+}
+
+/* line 523, ../sass/screen.scss */
+.navStuff li {
+  padding: 5px;
+  list-style: none;
+  display: inline;
+}
+
+/* line 532, ../sass/screen.scss */
+.navStuff a {
+  padding: 12px;
+}
+
+/* line 542, ../sass/screen.scss */
+.difficultyButtons .active a {
+  background: #105469;
+  color: white;
+}
+
+/* line 548, ../sass/screen.scss */
+.submitContainer {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+/* line 554, ../sass/screen.scss */
+.submitContainer .submit {
+  background-color: #cccccc;
+  border: 1px solid #bfbfbf;
+  margin: 0;
+  min-width: 600px;
+  text-align: center;
+  padding: 20px 90px 20px 90px;
+  border-radius: 2px;
+  color: white;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+/* line 570, ../sass/screen.scss */
+.submitContainer .submit:hover {
+  background: #bfbfbf;
+  color: white;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+/* line 578, ../sass/screen.scss */
+.submitContainer .ready {
+  background-color: #31b7de;
+  border: 1px solid #22acd4;
+  margin: 0;
+  min-width: 600px;
+  text-align: center;
+  padding: 20px 90px 20px 90px;
+  border-radius: 2px;
+  color: white;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+/* line 592, ../sass/screen.scss */
+.submitContainer .ready:hover {
+  background: #22acd4;
+  color: white;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 604, ../sass/screen.scss */
+.introscreen h4 {
+  font-size: 57px;
+  line-height: 76px;
+}
+/* line 609, ../sass/screen.scss */
+.introscreen h5 {
+  font-size: 47px;
+  line-height: 57px;
+  padding-left: 40px;
+}
+/* line 616, ../sass/screen.scss */
+.introscreen ol {
+  padding-left: 40px;
+}
+/* line 618, ../sass/screen.scss */
+.introscreen ol li {
+  list-style: none;
+  line-height: 65px;
+}
+/* line 622, ../sass/screen.scss */
+.introscreen ol li span {
+  background-color: #31b7de;
+  padding: 5px;
+  padding-left: 15px;
+  font-size: 40px;
+  margin: 5px;
+  font-family: "Open Sans";
+  border: 3px solid #47bfe2;
+  border-radius: 3px;
+}
+/* line 634, ../sass/screen.scss */
+.introscreen ol li p {
+  width: 80%;
+  display: inline-block;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+/* line 644, ../sass/screen.scss */
+#random_numbers {
+  height: 200px;
+}
+/* line 647, ../sass/screen.scss */
+#random_numbers p {
+  font-size: 80px;
+  overflow: hidden;
+  o-text-overflow: clip;
+  text-overflow: clip;
+  color: #4d4d4d;
+  line-height: 100px;
+  width: 100%;
+  margin: 0;
+  background-color: #b3b3b3;
+  opacity: 0.2;
+}
+
+/* line 662, ../sass/screen.scss */
+#rangeval, #timeval {
+  color: red;
+  padding: 10px;
+  text-align: left;
+  width: 89%;
+  font-size: 14px;
+}
+
+/* line 671, ../sass/screen.scss */
+.scoreContainer ul {
+  padding-left: 20px;
+}
+/* line 674, ../sass/screen.scss */
+.scoreContainer p {
+  margin-bottom: 10px;
+}
+
+/* line 680, ../sass/screen.scss */
+.gameholder .flip-clock-label {
+  display: none;
+}

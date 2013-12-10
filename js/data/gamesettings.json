@@ -1,0 +1,16 @@
+{
+	"difficultySettings": {
+		"wimpy": {
+			"timer": 600,
+			"range": 25
+		},
+		"medium": {
+			"timer": 300,
+			"range": 50
+		},
+		"murderous": {
+			"timer": 120,
+			"range": 100
+		}
+	}
+}
